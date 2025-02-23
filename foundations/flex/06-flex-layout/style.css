@@ -52,12 +52,12 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #ddd;
+  background: #eee;
   padding: 5px 16px;
 }
 
 input {
-  border: 1px solid #ddd;
+  border: 1px solid #bebebe;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
@@ -67,7 +67,7 @@ input {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #dddddd;
+  background-color: #eee;
   margin-top: 10px; /* Add some space between the content and the footer if the page's height is very low */
 }
 
