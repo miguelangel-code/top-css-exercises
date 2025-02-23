@@ -8,6 +8,7 @@ body {
   margin: 0;
   min-height: 100vh;
   display: flex;
+  justify-content: space-between; /* Puts the header at the flex-start and pulls the footer to the flex-end */
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -22,6 +23,7 @@ body {
 
 .container { /* Lets the .sidebar and the .cards_container be in the same row */
   display: flex;
+  flex-grow: 1; /* The container grows taking the space between itself and the header/footer */
   gap: 20px;
 }
 
@@ -49,14 +51,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 25px 0;
+  margin: 25px 10px 25px 0;
+  height: fit-content; /* Avoids the cards from filling the extra height that the
+                          .container has taken, so only the .sidebar fills it */
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  flex-basis: 100px;
+  flex: 1 250px;
+  max-width: 300px;
   padding: 10px;
 }
 
