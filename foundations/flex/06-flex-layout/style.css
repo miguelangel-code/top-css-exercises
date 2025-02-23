@@ -68,6 +68,7 @@ input {
   display: flex;
   justify-content: space-between;
   background-color: #dddddd;
+  margin-top: 10px; /* Add some space between the content and the footer if the page's height is very low */
 }
 
 .footer ul {
