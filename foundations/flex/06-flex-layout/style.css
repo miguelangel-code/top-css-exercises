@@ -1,10 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
-  margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header ul  {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 15px;
+  padding: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: auto 0; /* Pulls the footer to the end when there are extensions
+                   messing up things, keeping the content centered */
 }
 
 img {
@@ -15,7 +52,8 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #eee;
+  background: #ddd;
+  padding: 5px 16px;
 }
 
 input {
@@ -23,4 +61,18 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddddd;
+}
+
+.footer ul {
+  padding: 14px;
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
 }
